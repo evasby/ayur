@@ -1,0 +1,52 @@
+#page {
+  width: auto;
+  max-width: 1000px; }
+
+#header-wrapper {
+  width: auto; }
+  #header-wrapper * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+#header {
+  width: auto; }
+  #header #header-logo {
+    width: 40%; }
+  #header #top_links {
+    width: 34%;
+    margin-left: 0;
+    padding-left: 35px; }
+  #header #tel {
+    width: 26%; }
+
+#navigation {
+  width: auto; }
+
+#highlighted {
+  width: auto; }
+
+#main {
+  width: auto; }
+  #main * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.sidebars {
+  float: left;
+  width: 20%; }
+  .sidebar-first .sidebars .region-sidebar-first {
+    color: #fff;
+    float: none;
+    line-height: 20px;
+    margin-left: 0;
+    padding: 0 0 15px;
+    width: auto; }
+
+.sidebar-first #content {
+  margin-left: 0;
+  margin-right: 0;
+  width: 80%;
+  padding-left: 15px; }
+
+.field-name-field-kurort-foto {
+  width: auto; }

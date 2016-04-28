@@ -1,0 +1,66 @@
+#page{
+	width: auto;
+	max-width: 1000px;
+}
+//header
+#header-wrapper{
+	& *{
+		box-sizing: border-box;
+	}
+	width: auto;
+}
+#header{
+	width: auto;
+	#header-logo{
+		width: 40%;
+	}
+	#top_links{
+		width: 34%;
+		margin-left: 0;
+		padding-left: 35px;
+	}
+	#tel{
+		width: 26%;
+	}
+}
+//navigation
+#navigation{
+	width: auto;
+}
+//slider
+#highlighted{
+	width: auto;
+}
+//main
+#main{
+	width: auto;
+	& *{
+		box-sizing: border-box;
+	}
+}
+//aside
+.sidebars{
+	float: left;
+	width: 20%;
+	.sidebar-first & .region-sidebar-first{
+		color: #fff;
+    float: none;
+    line-height: 20px;
+    margin-left: 0;
+    padding: 0 0 15px;
+    width: auto;
+	}
+}
+//content
+#content{
+	.sidebar-first &{
+		margin-left: 0;
+		margin-right: 0;
+		width: 80%;
+		padding-left: 15px;
+	}
+}
+//gallery
+.field-name-field-kurort-foto{
+	width: auto;
+}
