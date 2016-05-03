@@ -12,18 +12,45 @@
   width: auto; }
   #header #header-logo {
     width: 40%; }
+    @media all and (max-width: 767px) {
+      #header #header-logo {
+        display: block;
+        float: none;
+        width: auto; } }
   #header #top_links {
     width: 34%;
     margin-left: 0;
     padding-left: 35px; }
+    @media all and (max-width: 767px) {
+      #header #top_links {
+        display: block;
+        float: none;
+        width: auto;
+        padding: 0;
+        margin: 0;
+        text-align: center; } }
   #header #tel {
     width: 26%; }
+    @media all and (max-width: 767px) {
+      #header #tel {
+        display: block;
+        float: none;
+        width: auto;
+        padding-top: 10px;
+        text-align: center; } }
+
+@media all and (max-width: 767px) {
+  #footer {
+    margin-top: 0; } }
 
 #navigation {
   width: auto; }
 
 #highlighted {
   width: auto; }
+  @media all and (max-width: 767px) {
+    #highlighted {
+      display: none; } }
 
 #main {
   width: auto; }
@@ -41,12 +68,191 @@
     margin-left: 0;
     padding: 0 0 15px;
     width: auto; }
+    @media all and (max-width: 767px) {
+      .sidebar-first .sidebars .region-sidebar-first h2 {
+        margin-bottom: 0 !important;
+        cursor: pointer; }
+        .sidebar-first .sidebars .region-sidebar-first h2:hover {
+          background-color: #ccc; } }
+    @media all and (max-width: 767px) {
+      .sidebar-first .sidebars .region-sidebar-first .menu {
+        padding: 5px 0; } }
+  @media all and (max-width: 767px) {
+    .sidebars {
+      float: none;
+      width: auto; } }
+
+@media all and (max-width: 767px) {
+  .block-menu__mobileClose .menu {
+    display: none; } }
+
+@media all and (max-width: 767px) {
+  .field-item > ymaps {
+    height: 300px !important; } }
+
+@media all and (max-width: 767px) {
+  .field-item iframe {
+    margin: 0 auto; } }
+
+.field-name-body p {
+  word-wrap: break-word; }
+  @media all and (max-width: 767px) {
+    .field-name-body p {
+      word-wrap: normal; } }
+
+@media all and (max-width: 767px) {
+  #cboxTitle {
+    display: none !important; } }
 
 .sidebar-first #content {
   margin-left: 0;
   margin-right: 0;
   width: 80%;
   padding-left: 15px; }
+  @media all and (max-width: 767px) {
+    .sidebar-first #content {
+      float: none;
+      width: auto;
+      padding-left: 0;
+      overflow: hidden; } }
+
+@media all and (max-width: 767px) {
+  .view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row {
+    width: auto;
+    margin-right: 0; } }
 
 .field-name-field-kurort-foto {
   width: auto; }
+  @media all and (max-width: 767px) {
+    .field-name-field-kurort-foto {
+      text-align: center; } }
+  @media all and (max-width: 767px) {
+    .field-name-field-kurort-foto .field-item {
+      float: none;
+      display: inline-block; } }
+
+.menu-toggle {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 53px;
+  padding: 16px 0 0 15px;
+  background-color: #0066cb;
+  position: relative;
+  cursor: pointer;
+  display: none; }
+  @media all and (max-width: 767px) {
+    .menu-toggle {
+      display: block; } }
+  .menu-toggle_text {
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: bold; }
+  .menu-toggle_switch {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 3px;
+    right: 15px;
+    top: 25px;
+    background-color: #fff; }
+    .menu-toggle__on .menu-toggle_switch {
+      background-color: transparent; }
+  .menu-toggle_switch:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    background-color: #fff;
+    height: 3px;
+    width: 100%; }
+    .menu-toggle__on .menu-toggle_switch:before {
+      -webkit-transform: rotate(45deg) translate(7px, 7px);
+      -ms-transform: rotate(45deg) translate(7px, 7px);
+      transform: rotate(45deg) translate(7px, 7px); }
+  .menu-toggle_switch:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background-color: #fff;
+    height: 3px;
+    width: 100%; }
+    .menu-toggle__on .menu-toggle_switch:after {
+      -webkit-transform: rotate(-45deg) translate(7px, -7px);
+      -ms-transform: rotate(-45deg) translate(7px, -7px);
+      transform: rotate(-45deg) translate(7px, -7px); }
+  .menu-toggle_switch:after, .menu-toggle_switch:before {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+
+@media all and (max-width: 767px) {
+  #navigation #main-menu {
+    display: none;
+    float: none; }
+    .menu-toggle__on + #navigation #main-menu {
+      display: block; } }
+
+@media all and (max-width: 959px) {
+  #navigation ul.links {
+    padding: 0; } }
+
+@media all and (max-width: 767px) {
+  #navigation ul.links {
+    display: block;
+    float: none; } }
+
+@media all and (max-width: 959px) {
+  #navigation ul.links li {
+    padding: 0 !important; } }
+
+@media all and (max-width: 767px) {
+  #navigation ul.links li {
+    display: block;
+    float: none;
+    padding: 0 !important;
+    border-right: 0; } }
+
+@media all and (max-width: 959px) {
+  #navigation ul.links li a {
+    display: block; } }
+
+@media all and (max-width: 767px) {
+  #header-search {
+    display: none; } }
+
+#header-search input[type="text"] {
+  width: 170px; }
+
+@media all and (max-width: 959px) {
+  #contact-site-form #edit-actions {
+    padding-top: 15px; } }
+
+@media all and (max-width: 767px) {
+  #price-menu {
+    bottom: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 7px 0 !important; } }
+
+@media all and (max-width: 767px) {
+  #price-menu ul li {
+    display: inline-block !important;
+    width: auto !important;
+    margin-right: 7px !important;
+    padding: 0 !important;
+    border: 0 !important; } }
+
+@media all and (max-width: 767px) {
+  #price-menu ul li.title {
+    background: none !important; } }
+
+@media all and (max-width: 767px) {
+  #price-menu ul li:not([class="title"]) {
+    padding: 3px !important;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; } }

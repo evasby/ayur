@@ -13,14 +13,40 @@
 	width: auto;
 	#header-logo{
 		width: 40%;
+		@include m768{
+			display: block;
+			float: none;
+			width: auto;
+		}
 	}
 	#top_links{
 		width: 34%;
 		margin-left: 0;
 		padding-left: 35px;
+		@include m768{
+			display: block;
+			float: none;
+			width: auto;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
 	}
 	#tel{
 		width: 26%;
+		@include m768{
+			display: block;
+			float: none;
+			width: auto;
+			padding-top: 10px;
+			text-align: center;
+		}
+	}
+}
+//footer
+#footer{
+	@include m768{
+		margin-top: 0;
 	}
 }
 //navigation
@@ -30,6 +56,9 @@
 //slider
 #highlighted{
 	width: auto;
+	@include m768{
+		display: none;
+	}
 }
 //main
 #main{
@@ -49,18 +78,231 @@
     margin-left: 0;
     padding: 0 0 15px;
     width: auto;
+    h2{
+    	@include m768{
+				margin-bottom: 0!important;
+				cursor: pointer;
+				&:hover{
+					background-color: #ccc;
+				}
+			}
+    }
+    .menu{
+    	@include m768{
+				padding: 5px 0;
+			}
+    }
+	}
+	@include m768{
+		float: none;
+		width: auto;
 	}
 }
+.block-menu__mobileClose{
+	.menu{
+  	@include m768{
+			display: none;
+		}
+  }
+}
 //content
+.field-item > ymaps{
+	@include m768{
+		height: 300px!important;
+	}
+}
+.field-item iframe{
+	@include m768{
+		margin: 0 auto;
+	}
+}
+.field-name-body p {
+  word-wrap: break-word;
+  @include m768{
+		word-wrap: normal;
+	}
+}
+#cboxTitle{
+	@include m768{
+		display: none!important;
+	}
+}
 #content{
 	.sidebar-first &{
 		margin-left: 0;
 		margin-right: 0;
 		width: 80%;
 		padding-left: 15px;
+		@include m768{
+			float: none;
+			width: auto;
+			padding-left: 0;
+			overflow: hidden;
+		}
+	}
+}
+.view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row{
+	@include m768{
+		width: auto;
+		margin-right: 0;
 	}
 }
 //gallery
 .field-name-field-kurort-foto{
 	width: auto;
+	@include m768{
+		text-align: center;
+	}
+	.field-item{
+		@include m768{
+			float: none;
+			display: inline-block;
+		}
+	}
+}
+//menu
+.menu-toggle{
+	box-sizing: border-box;
+	height: 53px;
+	padding: 16px 0 0 15px;
+	background-color: #0066cb;
+	position: relative;
+	cursor: pointer;
+	display: none;
+	@include m768{
+		display: block;
+	}
+	&_text{
+		font-size: 16px;
+		line-height: 16px;
+		color: #fff;
+		font-weight: bold;
+	}
+	&_switch{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 3px;
+    right: 15px;
+    top: 25px;
+    background-color: #fff; 
+    .menu-toggle__on &{
+    	background-color: transparent;
+    }
+  }
+  &_switch:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    .menu-toggle__on &{
+    	transform: rotate(45deg) translate(7px, 7px);
+    }
+  }
+	&_switch:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    .menu-toggle__on &{
+    	transform: rotate(-45deg) translate(7px, -7px);
+    }
+  }
+  
+ 	&_switch:after, &_switch:before{
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }   
+}
+#navigation{
+	#main-menu{
+		@include m768{
+			display: none;
+			float: none;
+			.menu-toggle__on + &{
+				display: block
+			}
+		}
+	}
+	ul.links{
+		@include m960{
+			padding: 0;
+		}
+		@include m768{
+			display: block;
+			float: none;
+			
+		}
+		li{
+			@include m960{
+				padding: 0!important;
+			}
+			@include m768{
+				display: block;
+				float: none;
+				padding: 0!important;
+				border-right: 0;
+			}
+			a{
+				@include m960{
+					display: block;
+				}
+			}
+		}
+	}
+	
+}
+#header-search{
+	@include m768{
+		display: none;
+	}
+}
+#header-search input[type="text"]{
+	width: 170px;
+}
+//form
+#contact-site-form{
+	#edit-actions{
+		@include m960{
+			padding-top: 15px;
+		}
+	}
+}
+//price-menu
+#price-menu{
+	@include m768{
+		bottom: 0!important;
+		width: 100%!important;
+		text-align: center!important;
+		padding: 7px 0!important;
+	}
+	ul{
+		li{	
+			@include m768{
+				display: inline-block!important;
+				width: auto!important;
+				margin-right: 7px!important;
+				padding: 0!important;
+				border: 0!important;
+			}
+			&.title{
+				@include m768{
+					background: none!important;
+				}
+			}
+			&:not([class="title"]) {
+				@include m768{
+					padding: 3px!important;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
 }
