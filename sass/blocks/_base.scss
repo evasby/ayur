@@ -1,3 +1,8 @@
+ul{
+	@include m768{
+		padding-left: 18px;
+	}
+}
 #page{
 	width: auto;
 	max-width: 1000px;
@@ -156,7 +161,11 @@
 	.field-item{
 		@include m768{
 			float: none;
-			display: inline-block;
+			//display: inline-block;
+			display: none;
+			&:first-child{
+				display: inline-block;
+			}
 		}
 	}
 }
@@ -241,6 +250,9 @@
 			
 		}
 		li{
+			&.mobile{
+				display: none;
+			}
 			@include m960{
 				padding: 0!important;
 			}
@@ -249,6 +261,12 @@
 				float: none;
 				padding: 0!important;
 				border-right: 0;
+				&.non-mobile{
+					display: none;
+				}
+				&.mobile{
+					display: block;
+				}
 			}
 			a{
 				@include m960{
