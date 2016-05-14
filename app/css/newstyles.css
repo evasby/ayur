@@ -84,7 +84,8 @@
   @media all and (max-width: 767px) {
     .sidebars {
       float: none;
-      width: auto; } }
+      width: auto;
+      display: none; } }
 
 @media all and (max-width: 767px) {
   .block-menu__mobileClose .menu {
@@ -224,15 +225,50 @@
     display: block;
     float: none;
     padding: 0 !important;
-    border-right: 0; }
+    border-right: 0;
+    border-top: 1px solid #ccc; }
+    #navigation ul.links li:first-child {
+      border-top: none; }
     #navigation ul.links li.non-mobile {
       display: none; }
     #navigation ul.links li.mobile {
       display: block; } }
 
-@media all and (max-width: 959px) {
-  #navigation ul.links li a {
-    display: block; } }
+#navigation ul.links li .menu__link {
+  cursor: pointer; }
+  @media all and (max-width: 959px) {
+    #navigation ul.links li .menu__link {
+      display: block; } }
+
+#navigation ul.links .nolink {
+  position: relative; }
+  #navigation ul.links .nolink:before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 6.9px;
+    border-color: transparent transparent transparent #ffffff;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s; }
+  #navigation ul.links .nolink__open:before {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+#navigation ul.links ul {
+  padding: 0 40px 15px 40px;
+  background-color: #0066CB; }
+  @media all and (max-width: 767px) {
+    #navigation ul.links ul .menu__link {
+      font-size: 14px;
+      padding: 3px 0 3px 3px; } }
 
 @media all and (max-width: 767px) {
   #header-search {
@@ -269,3 +305,15 @@
     padding: 3px !important;
     -webkit-border-radius: 5px;
     border-radius: 5px; } }
+
+/*#navbar-administration{
+	display: none;
+	@include m768{
+		display: block;
+	}
+}
+#admin-menu{
+	@include m768{
+		display: none;
+	}
+}*/
