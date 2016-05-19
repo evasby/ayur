@@ -441,6 +441,12 @@
   .view-kurorty .views-row .views-field-title, .view-block-kurorty-5 .views-row .views-field-title, .view-block-kurorty-4 .views-row .views-field-title, .view-block-kurorty-3 .views-row .views-field-title, .view-block-shri-lanka .views-row .views-field-title {
     margin-bottom: 5px; }
 
+#google_translate_element {
+  padding: 12px 0 0 40px; }
+  @media all and (max-width: 767px) {
+    #google_translate_element {
+      padding: 12px 0 0 0; } }
+
 .block-rf .form-item {
   margin: 0; }
   .block-rf .form-item label {

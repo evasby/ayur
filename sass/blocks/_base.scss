@@ -499,3 +499,10 @@ ul{
 		margin-bottom: 5px;
 	}
 }
+//google translate
+#google_translate_element{
+	padding: 12px 0 0 40px;
+	@include m768{
+		padding: 12px 0 0 0;
+	}
+}
