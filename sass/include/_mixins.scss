@@ -8,6 +8,12 @@
 @mixin m960 {
   @media all and (max-width: 959px) { @content; }
 }
+@mixin m332 {
+  @media all and (max-width: 332px) { @content; }
+}
+@mixin m320 {
+  @media all and (max-width: 319px) { @content; }
+}
 //*********************************************************************************/
 @mixin link($normal, $hover){
   color:$normal;
@@ -29,9 +35,9 @@
   &:after{
     clear: both;
   }
-  @include old-ie{
+  /*@include old-ie{
     *zoom: 1;
-  }
+  }*/
 }
 //*********************************************************************************/
 @mixin before{

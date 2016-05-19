@@ -13,7 +13,9 @@ var gulp = require('gulp'),
     plumberNotifier = require('gulp-plumber-notifier'),
     plumber = require('gulp-plumber'),
     wait = require('gulp-wait'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    ftp = require( 'vinyl-ftp' );
+
 
 // server connect
 gulp.task('connect', function() {
@@ -37,6 +39,14 @@ function errorAlert(error){
   this.emit("end");
 };
 
+//ftp
+var conn = ftp.create( {
+  host:     'wfs.by',
+  user:     'evasby',
+  password: 'Gfhnyth605927219171983',
+  parallel: 10
+} );
+
 // css
 gulp.task('css', function () {
   return gulp.src('sass/newstyles.scss')
@@ -50,9 +60,11 @@ gulp.task('css', function () {
     .pipe(gulp.dest('css'))
     .pipe(gulp.dest('app/css'))
     .pipe(gulp.dest('d:/OpenServer/domains/ayur/themes/zen/zen-internals/css'))
+    .pipe( conn.dest( '/www/ayur/themes/zen/zen-internals/css' ) )
     .pipe(connect.reload())
     .pipe(notify('CSS - Done!'));
 });
+
 
 // Clean
 gulp.task('clean', function () {

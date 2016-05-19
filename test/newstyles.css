@@ -24,17 +24,7 @@
   #header #top_links {
     width: 34%;
     margin-left: 0;
-    padding-left: 35px;
-    /*@include old-ie{
-    *zoom: 1;
-  }*/ }
-    #header #top_links:before, #header #top_links:after {
-      content: ".";
-      display: block;
-      height: 0;
-      overflow: hidden; }
-    #header #top_links:after {
-      clear: both; }
+    padding-left: 35px; }
     @media all and (max-width: 767px) {
       #header #top_links {
         display: block;
@@ -43,23 +33,6 @@
         padding: 0;
         margin: 0;
         text-align: center; } }
-    #header #top_links .region-top-links {
-      /*float: left;*/
-      display: inline-block; }
-    #header #top_links .top_links_ig {
-      display: inline-block;
-      opacity: 0.8;
-      position: relative;
-      top: 7px;
-      left: 5px; }
-      #header #top_links .top_links_ig:hover {
-        opacity: 1; }
-      @media all and (max-width: 767px) {
-        #header #top_links .top_links_ig {
-          float: none;
-          position: relative;
-          top: 7px;
-          left: 5px; } }
   #header #tel {
     width: 26%; }
     @media all and (max-width: 767px) {
@@ -165,10 +138,7 @@
       float: none;
       display: none; }
       .field-name-field-kurort-foto .field-item:first-child {
-        display: inline-block; }
-        .field-name-field-kurort-foto .field-item:first-child img {
-          width: 170px;
-          height: 170px; } }
+        display: inline-block; } }
 
 .menu-toggle {
   -webkit-box-sizing: border-box;
@@ -300,25 +270,7 @@
   @media all and (max-width: 767px) {
     #navigation ul.links ul .menu__link {
       font-size: 14px;
-      padding: 3px 0 3px 3px; }
-      #navigation ul.links ul .menu__link.select {
-        position: relative;
-        font-size: 16px; }
-        #navigation ul.links ul .menu__link.select:before {
-          content: '';
-          position: absolute;
-          left: -10px;
-          top: 50%;
-          margin-top: -3px;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 4px 0 4px 6.9px;
-          border-color: transparent transparent transparent #ffffff;
-          -webkit-transition: -webkit-transform 0.2s;
-          transition: -webkit-transform 0.2s;
-          transition: transform 0.2s;
-          transition: transform 0.2s, -webkit-transform 0.2s; } }
+      padding: 3px 0 3px 3px; } }
 
 @media all and (max-width: 767px) {
   #header-search {
@@ -370,76 +322,10 @@
 .view-kurorty .view-filters {
   display: none; }
   @media all and (max-width: 767px) {
-    .page-kurorty-all .view-kurorty .view-filters {
+    .view-kurorty .view-filters {
       display: block; } }
   .view-kurorty .view-filters .description {
     display: none; }
-
-.view-kurorty .views-exposed-form .views-exposed-widget {
-  float: none;
-  padding: 0; }
-
-.view-kurorty .views-submit-button {
-  text-align: center; }
-
-.view-kurorty .views-exposed-form .views-exposed-widget .form-submit {
-  margin: 0; }
-
-.view-kurorty .bef-checkboxes {
-  /*@include old-ie{
-    *zoom: 1;
-  }*/
-  max-width: 302px;
-  margin: 0 auto;
-  text-align: center; }
-  .view-kurorty .bef-checkboxes:before, .view-kurorty .bef-checkboxes:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden; }
-  .view-kurorty .bef-checkboxes:after {
-    clear: both; }
-  @media all and (max-width: 332px) {
-    .view-kurorty .bef-checkboxes {
-      max-width: 290px; } }
-  @media all and (max-width: 319px) {
-    .view-kurorty .bef-checkboxes {
-      max-width: 145px; } }
-  .view-kurorty .bef-checkboxes .form-item {
-    float: left;
-    margin: 0; }
-    .view-kurorty .bef-checkboxes .form-item input[type="checkbox"] {
-      display: none; }
-    .view-kurorty .bef-checkboxes .form-item label {
-      display: inline-block;
-      width: 145px;
-      background: #e5e5e5;
-      background: -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(#fefefe));
-      background: -webkit-linear-gradient(bottom, #e5e5e5, #fefefe);
-      background: linear-gradient(to top, #e5e5e5, #fefefe);
-      padding: 5px 0px;
-      margin: 0 3px 5px 3px;
-      border-bottom: 1px solid #d1d1d1;
-      font-weight: normal;
-      cursor: pointer;
-      font-size: 12px;
-      -webkit-border-radius: 3px;
-      border-radius: 3px; }
-      @media all and (max-width: 332px) {
-        .view-kurorty .bef-checkboxes .form-item label {
-          width: 140px;
-          margin: 0 3px 5px 2px; } }
-    .view-kurorty .bef-checkboxes .form-item input[type="checkbox"]:checked + label {
-      font-weight: bold; }
-
-.view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row {
-  height: 200px;
-  line-height: 20px; }
-  @media all and (max-width: 767px) {
-    .view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row {
-      height: auto; } }
-  .view-kurorty .views-row .views-field-title, .view-block-kurorty-5 .views-row .views-field-title, .view-block-kurorty-4 .views-row .views-field-title, .view-block-kurorty-3 .views-row .views-field-title, .view-block-shri-lanka .views-row .views-field-title {
-    margin-bottom: 5px; }
 
 .block-rf .form-item {
   margin: 0; }

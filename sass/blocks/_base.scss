@@ -28,6 +28,7 @@ ul{
 		width: 34%;
 		margin-left: 0;
 		padding-left: 35px;
+		@include clearfix();
 		@include m768{
 			display: block;
 			float: none;
@@ -35,6 +36,31 @@ ul{
 			padding: 0;
 			margin: 0;
 			text-align: center;
+		}
+		.region-top-links{
+			/*float: left;*/
+			display: inline-block;
+			@include m768{
+
+			}
+		}
+		.top_links_ig{
+			//float: left;
+			//padding: 3px 0 0 3px;
+			display: inline-block;
+			opacity: 0.8;
+			position: relative;
+			top: 7px;
+			left: 5px;
+			&:hover{
+				opacity: 1;
+			}
+			@include m768{
+				float: none;
+				position: relative;
+				top: 7px;
+				left: 5px;
+			}
 		}
 	}
 	#tel{
@@ -76,6 +102,9 @@ ul{
 .sidebars{
 	float: left;
 	width: 20%;
+	.block {
+    margin-bottom: 1.5em;
+	}
 	.sidebar-first & .region-sidebar-first{
 		color: #fff;
     float: none;
@@ -166,6 +195,10 @@ ul{
 			display: none;
 			&:first-child{
 				display: inline-block;
+				img{
+					width: 170px;
+					height: 170px;
+				}
 			}
 		}
 	}
@@ -308,6 +341,23 @@ ul{
 				@include m768{
 					font-size: 14px;
 					padding: 3px 0 3px 3px;
+					&.select{
+						position: relative;
+						font-size: 16px;
+						&:before{
+							content: '';
+							position: absolute;
+							left: -10px;
+							top: 50%;
+							margin-top: -3px;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 4px 0 4px 6.9px;
+							border-color: transparent transparent transparent #ffffff;
+							transition: transform 0.2s;
+						}
+					}
 				}
 			}
 		}
@@ -373,3 +423,79 @@ ul{
 		display: none;
 	}
 }*/
+.view-kurorty{
+	.view-filters{
+		display: none;
+		@include m768{
+			.page-kurorty-all &{
+				display: block;
+			}
+		}
+		.description{
+			display: none;
+		}
+	}
+	.views-exposed-form .views-exposed-widget{
+		float: none;
+		padding: 0;
+	}
+	.views-submit-button{
+		text-align: center;
+	}
+	.views-exposed-form .views-exposed-widget .form-submit{
+		margin: 0;
+	}
+	.bef-checkboxes{
+		@include clearfix();
+		max-width: 302px;
+		margin: 0 auto;
+		text-align: center;
+		@include m332{
+			max-width: 290px;
+		}
+		@include m320{
+			max-width: 145px;
+		}
+    .form-item{
+			//display: inline-block;
+			float: left;
+			margin: 0;
+			
+	    input[type="checkbox"]{
+	    	display: none;
+	    }
+	    label{
+				display: inline-block;
+				width: 145px;
+				background: #e5e5e5;
+		    background: linear-gradient(to top, #e5e5e5, #fefefe);
+		    padding: 5px 0px;
+		    margin: 0 3px 5px 3px;
+		    border-bottom: 1px solid #d1d1d1;
+		    font-weight: normal;
+		    cursor: pointer;
+		    font-size: 12px;
+		    border-radius: 3px;
+		    @include m332{
+					width: 140px;
+					margin: 0 3px 5px 2px;
+				}
+			}
+			input[type="checkbox"]:checked + label{
+			  font-weight: bold;
+			}
+    }
+		
+	}
+}
+//fix views items
+.view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row{
+	height: 200px;
+	line-height: 20px;
+	@include m768{
+		height: auto;
+	}
+	.views-field-title{
+		margin-bottom: 5px;
+	}
+}
