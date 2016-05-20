@@ -24,7 +24,7 @@
   #header #top_links {
     width: 34%;
     margin-left: 0;
-    padding-left: 35px;
+    text-align: center;
     /*@include old-ie{
     *zoom: 1;
   }*/ }
@@ -442,7 +442,7 @@
     margin-bottom: 5px; }
 
 #google_translate_element {
-  padding: 12px 0 0 40px; }
+  padding: 12px 0 0 2px; }
   @media all and (max-width: 767px) {
     #google_translate_element {
       padding: 12px 0 0 0; } }

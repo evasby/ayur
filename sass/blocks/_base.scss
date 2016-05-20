@@ -27,7 +27,8 @@ ul{
 	#top_links{
 		width: 34%;
 		margin-left: 0;
-		padding-left: 35px;
+		//padding-left: 35px;
+		text-align: center;
 		@include clearfix();
 		@include m768{
 			display: block;
@@ -501,7 +502,7 @@ ul{
 }
 //google translate
 #google_translate_element{
-	padding: 12px 0 0 40px;
+	padding: 12px 0 0 2px;
 	@include m768{
 		padding: 12px 0 0 0;
 	}
