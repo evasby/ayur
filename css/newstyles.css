@@ -2,6 +2,17 @@
   ul {
     padding-left: 18px; } }
 
+.cke_top, .cke_bottom {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E3E3E3), to(#CCD7DD)) !important;
+  background-image: -webkit-linear-gradient(top, #E3E3E3, #CCD7DD) !important;
+  background-image: linear-gradient(top, #E3E3E3, #CCD7DD) !important; }
+
+.comments__form-title {
+  margin: 50px 0 0; }
+
+.view .views-row .views-field-field-extra-descr {
+  margin-top: 5px; }
+
 #page {
   width: auto;
   max-width: 1000px; }
@@ -503,6 +514,9 @@
   .toup__on {
     display: block; }
 
+.comments .form-item {
+  margin: 10px 0; }
+
 .comments .comment {
   background-color: #e3e3e3;
   padding: 0 0 15px 60px;
@@ -579,3 +593,40 @@
     margin-bottom: 10px; }
   .comment-form .form-type-textarea {
     margin-bottom: 10px; }
+
+.field-name-body blockquote {
+  background-color: #e3e3e3;
+  padding: 15px 0 15px 60px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 24px 0; }
+  .field-name-body blockquote:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #5b99c0; }
+  .field-name-body blockquote p {
+    background-color: #ccd7dd;
+    padding: 20px 35px 20px;
+    margin: 0 15px 0 0;
+    overflow: hidden;
+    position: relative; }
+    .field-name-body blockquote p:before {
+      content: '';
+      position: absolute;
+      top: 16px;
+      left: 17px;
+      width: 14px;
+      height: 11px;
+      background: transparent url("../images/review.png") left top no-repeat; }
+    .field-name-body blockquote p:after {
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      width: 14px;
+      height: 11px;
+      background: transparent url("../images/review.png") right top no-repeat; }

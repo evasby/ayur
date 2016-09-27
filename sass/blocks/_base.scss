@@ -3,6 +3,15 @@ ul{
 		padding-left: 18px;
 	}
 }
+.cke_top, .cke_bottom{
+	background-image: linear-gradient(top,#E3E3E3,#CCD7DD)!important;
+}
+.comments__form-title{
+	margin: 50px 0 0;
+}
+.view .views-row .views-field-field-extra-descr{
+	margin-top: 5px;
+}
 #page{
 	width: auto;
 	max-width: 1000px;
