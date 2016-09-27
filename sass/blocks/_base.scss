@@ -177,7 +177,15 @@ ul{
 		}
 	}
 }
+.views-field-field-kurort-main-img, .view-block-kurorty-5 .views-field-field-kurort-main-img, .view-block-kurorty-4 .views-field-field-kurort-main-img, .view-block-kurorty-3 .views-field-field-kurort-main-img, .view-block-shri-lanka .views-field-field-kurort-main-img{
+	margin-bottom: 0;
+}
 .view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row{
+	width: auto;
+	float: none;
+	display: block;
+	height: auto;
+	@include clearfix;
 	@include m768{
 		width: auto;
 		margin-right: 0;
@@ -491,13 +499,21 @@ ul{
 }
 //fix views items
 .view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row{
-	height: 200px;
+	//height: 200px;
 	line-height: 20px;
 	@include m768{
 		height: auto;
 	}
 	.views-field-title{
 		margin-bottom: 5px;
+	}
+}
+.views-field-field-kurort-main-img{
+	a{
+		display: block;
+		img{
+			display: block;
+		}
 	}
 }
 //google translate

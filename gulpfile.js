@@ -59,8 +59,8 @@ gulp.task('css', function () {
     }))
     .pipe(gulp.dest('css'))
     .pipe(gulp.dest('app/css'))
-    .pipe(gulp.dest('d:/OpenServer/domains/ayur/themes/zen/zen-internals/css'))
-    .pipe( conn.dest( '/www/ayur/themes/zen/zen-internals/css' ) )
+    .pipe(gulp.dest('c:/OpenServer/domains/ayur/themes/zen/zen-internals/css'))
+    //.pipe( conn.dest( '/www/ayur/themes/zen/zen-internals/css' ) )
     .pipe(connect.reload())
     .pipe(notify('CSS - Done!'));
 });

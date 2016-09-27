@@ -150,10 +150,28 @@
       padding-left: 0;
       overflow: hidden; } }
 
-@media all and (max-width: 767px) {
-  .view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row {
-    width: auto;
-    margin-right: 0; } }
+.views-field-field-kurort-main-img, .view-block-kurorty-5 .views-field-field-kurort-main-img, .view-block-kurorty-4 .views-field-field-kurort-main-img, .view-block-kurorty-3 .views-field-field-kurort-main-img, .view-block-shri-lanka .views-field-field-kurort-main-img {
+  margin-bottom: 0; }
+
+.view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row {
+  width: auto;
+  float: none;
+  display: block;
+  height: auto;
+  /*@include old-ie{
+    *zoom: 1;
+  }*/ }
+  .view-kurorty .views-row:before, .view-kurorty .views-row:after, .view-block-kurorty-5 .views-row:before, .view-block-kurorty-5 .views-row:after, .view-block-kurorty-4 .views-row:before, .view-block-kurorty-4 .views-row:after, .view-block-kurorty-3 .views-row:before, .view-block-kurorty-3 .views-row:after, .view-block-shri-lanka .views-row:before, .view-block-shri-lanka .views-row:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .view-kurorty .views-row:after, .view-block-kurorty-5 .views-row:after, .view-block-kurorty-4 .views-row:after, .view-block-kurorty-3 .views-row:after, .view-block-shri-lanka .views-row:after {
+    clear: both; }
+  @media all and (max-width: 767px) {
+    .view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row {
+      width: auto;
+      margin-right: 0; } }
 
 .field-name-field-kurort-foto {
   width: auto; }
@@ -433,13 +451,17 @@
       font-weight: bold; }
 
 .view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row {
-  height: 200px;
   line-height: 20px; }
   @media all and (max-width: 767px) {
     .view-kurorty .views-row, .view-block-kurorty-5 .views-row, .view-block-kurorty-4 .views-row, .view-block-kurorty-3 .views-row, .view-block-shri-lanka .views-row {
       height: auto; } }
   .view-kurorty .views-row .views-field-title, .view-block-kurorty-5 .views-row .views-field-title, .view-block-kurorty-4 .views-row .views-field-title, .view-block-kurorty-3 .views-row .views-field-title, .view-block-shri-lanka .views-row .views-field-title {
     margin-bottom: 5px; }
+
+.views-field-field-kurort-main-img a {
+  display: block; }
+  .views-field-field-kurort-main-img a img {
+    display: block; }
 
 #google_translate_element {
   padding: 12px 0 0 2px; }
@@ -463,3 +485,97 @@
 
 .block-rf .form-submit {
   margin-top: 8px; }
+
+.toup {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 55px;
+  height: 55px;
+  background: transparent url("../images/toup.png") left top no-repeat;
+  cursor: pointer;
+  display: none;
+  opacity: 0.8;
+  -webkit-transition: opacity, 0.2s;
+  transition: opacity, 0.2s; }
+  .toup:hover {
+    opacity: 1; }
+  .toup__on {
+    display: block; }
+
+.comments .comment {
+  background-color: #e3e3e3;
+  padding: 0 0 15px 60px;
+  position: relative;
+  overflow: hidden;
+  margin: 40px 60px 20px 0; }
+  .comments .comment.first {
+    margin: 0 60px 20px 0; }
+  .comments .comment:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #5b99c0; }
+  .comments .comment .field-name-comment-body {
+    background-color: #ccd7dd;
+    padding: 20px 35px 0;
+    margin: 0 15px 0 0;
+    overflow: hidden;
+    position: relative; }
+    .comments .comment .field-name-comment-body:before {
+      content: '';
+      position: absolute;
+      top: 16px;
+      left: 17px;
+      width: 14px;
+      height: 11px;
+      background: transparent url("../images/review.png") left top no-repeat; }
+    .comments .comment .field-name-comment-body:after {
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      width: 14px;
+      height: 11px;
+      background: transparent url("../images/review.png") right top no-repeat; }
+  .comments .comment .submitted {
+    padding: 15px;
+    font-weight: bold;
+    margin: 0 !important; }
+  .comments .comment .links {
+    margin: 0 0 0 15px; }
+
+.comments .indented {
+  margin: 0; }
+  .comments .indented .comment {
+    margin: 0 0 20px 60px;
+    padding: 0 60px 15px 0; }
+    .comments .indented .comment:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 0;
+      width: 60px;
+      height: 100%;
+      background-color: #5b99c0; }
+    .comments .indented .comment .field-name-comment-body {
+      margin: 0 0 0 15px; }
+
+.comment-form {
+  /*.field-name-comment-body{
+		background-color: transparent;
+		padding: 0;
+	}*/ }
+  .comment-form * {
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important; }
+  .comment-form textarea {
+    resize: none; }
+  .comment-form .field-name-comment-body {
+    margin-bottom: 10px; }
+  .comment-form .form-type-textarea {
+    margin-bottom: 10px; }

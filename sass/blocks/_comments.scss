@@ -1,0 +1,94 @@
+.comments{
+	.comment{
+		background-color: #e3e3e3;
+		padding: 0 0 15px 60px;
+		position: relative;
+		overflow: hidden;
+		margin: 40px 60px 20px 0;
+		&.first{
+			margin: 0 60px 20px 0;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 60px;
+			height: 100%;
+			background-color: #5b99c0;
+		}
+		.field-name-comment-body{
+			background-color: #ccd7dd;
+			padding: 20px 35px 0;
+			//margin-bottom: 15px;
+			margin: 0 15px 0 0;
+			overflow: hidden;
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 16px;
+				left: 17px;
+				width: 14px;
+				height: 11px;
+				background:transparent url('../images/review.png') left top no-repeat;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 10px;
+				right: 20px;
+				width: 14px;
+				height: 11px;
+				background:transparent url('../images/review.png') right top no-repeat;
+			}
+		}
+		.submitted{
+			padding: 15px;
+			font-weight: bold;
+			margin: 0!important;
+		}
+		.links{
+			margin: 0 0 0 15px;
+		}
+	}
+	.indented{
+		margin: 0;
+		.comment{
+			margin: 0 0 20px 60px;
+			padding: 0 60px 15px 0;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: auto;
+				right: 0;
+				width: 60px;
+				height: 100%;
+				background-color: #5b99c0;
+			}
+			.field-name-comment-body{
+				margin: 0 0 0 15px;
+			}
+		}
+	}
+
+}
+.comment-form{
+	*{
+		box-sizing: content-box!important;
+	}
+	textarea{
+		resize: none;
+	}
+	/*.field-name-comment-body{
+		background-color: transparent;
+		padding: 0;
+	}*/
+	.field-name-comment-body{
+		margin-bottom: 10px;
+	}
+	.form-type-textarea{
+		margin-bottom: 10px;
+	}
+}
