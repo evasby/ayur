@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     sass= require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     livereload = require('gulp-livereload'),
-    connect = require('gulp-connect'),
+    //connect = require('gulp-connect'),
     plumberNotifier = require('gulp-plumber-notifier'),
     plumber = require('gulp-plumber'),
     wait = require('gulp-wait'),
@@ -18,19 +18,19 @@ var gulp = require('gulp'),
 
 
 // server connect
-gulp.task('connect', function() {
+/*gulp.task('connect', function() {
   connect.server({
     root: 'app',
     livereload: true
   });
-});
+});*/
 
 // html
-gulp.task('html', function() {
+/*gulp.task('html', function() {
   gulp.src('app/*.html')
   .pipe(connect.reload())
   .pipe(notify('HTML - Done!'));
-})
+})*/
 
 // Error Notification
 function errorAlert(error){
@@ -61,7 +61,7 @@ gulp.task('css', function () {
     .pipe(gulp.dest('app/css'))
     .pipe(gulp.dest('c:/OpenServer/domains/ayur/themes/zen/zen-internals/css'))
     //.pipe( conn.dest( '/www/ayur/themes/zen/zen-internals/css' ) )
-    .pipe(connect.reload())
+    //.pipe(connect.reload())
     .pipe(notify('CSS - Done!'));
 });
 
@@ -121,4 +121,4 @@ gulp.task('watch', function () {
 
 // default
 //gulp.task('default', ['connect', 'jade', 'html', 'css', 'watch']);
-gulp.task('default', ['connect', 'html', 'css', 'watch']);
+gulp.task('default', ['css', 'watch']);

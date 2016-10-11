@@ -8,6 +8,9 @@ ul{
 }
 .comments__form-title{
 	margin: 50px 0 0;
+	.node-type-page &{
+		margin-top: 25px;
+	}
 }
 .view .views-row .views-field-field-extra-descr{
 	margin-top: 5px;
