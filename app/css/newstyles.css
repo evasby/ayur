@@ -632,3 +632,6 @@
       width: 14px;
       height: 11px;
       background: transparent url("../images/review.png") right top no-repeat; }
+
+.captcha {
+  margin-bottom: 10px; }
