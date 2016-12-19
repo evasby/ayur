@@ -1,0 +1,46 @@
+.mobile-filter{
+	display: none;
+	max-width: 302px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  @include m332{
+		max-width: 290px;
+	}
+	@include m320{
+		max-width: 145px;
+	}
+	@include m768{
+		display: block;
+	}
+	.form-type-checkbox{
+		float: left;
+		margin: 0;
+		a{
+			display: none;
+		}
+		.hide{
+			font-weight: normal;
+			display: inline-block;
+			width: 145px;
+			background: #e5e5e5;
+	    background: linear-gradient(to top, #e5e5e5, #fefefe);
+	    padding: 5px 0px;
+	    margin: 0 3px 5px 3px;
+	    border-bottom: 1px solid #d1d1d1;
+	    font-weight: normal;
+	    cursor: pointer;
+	    font-size: 12px;
+	    border-radius: 3px;
+	    @include m332{
+				width: 140px;
+				margin: 0 3px 5px 2px;
+			}
+		}
+		input[type="checkbox"] {
+		  display: none;
+		}
+		input[type="checkbox"]:checked + label .hide {
+		  font-weight: bold;
+		}
+	}
+}

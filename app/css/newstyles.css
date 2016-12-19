@@ -1,3 +1,10 @@
+.hide {
+  display: none; }
+
+@media all and (max-width: 767px) {
+  .page-kurorty .messages {
+    display: none; } }
+
 @media all and (max-width: 767px) {
   ul {
     padding-left: 18px; } }
@@ -635,3 +642,47 @@
 
 .captcha {
   margin-bottom: 10px; }
+
+.mobile-filter {
+  display: none;
+  max-width: 302px;
+  margin: 0 auto 10px auto;
+  text-align: center; }
+  @media all and (max-width: 332px) {
+    .mobile-filter {
+      max-width: 290px; } }
+  @media all and (max-width: 319px) {
+    .mobile-filter {
+      max-width: 145px; } }
+  @media all and (max-width: 767px) {
+    .mobile-filter {
+      display: block; } }
+  .mobile-filter .form-type-checkbox {
+    float: left;
+    margin: 0; }
+    .mobile-filter .form-type-checkbox a {
+      display: none; }
+    .mobile-filter .form-type-checkbox .hide {
+      font-weight: normal;
+      display: inline-block;
+      width: 145px;
+      background: #e5e5e5;
+      background: -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(#fefefe));
+      background: -webkit-linear-gradient(bottom, #e5e5e5, #fefefe);
+      background: linear-gradient(to top, #e5e5e5, #fefefe);
+      padding: 5px 0px;
+      margin: 0 3px 5px 3px;
+      border-bottom: 1px solid #d1d1d1;
+      font-weight: normal;
+      cursor: pointer;
+      font-size: 12px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px; }
+      @media all and (max-width: 332px) {
+        .mobile-filter .form-type-checkbox .hide {
+          width: 140px;
+          margin: 0 3px 5px 2px; } }
+    .mobile-filter .form-type-checkbox input[type="checkbox"] {
+      display: none; }
+    .mobile-filter .form-type-checkbox input[type="checkbox"]:checked + label .hide {
+      font-weight: bold; }

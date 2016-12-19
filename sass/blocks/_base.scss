@@ -1,3 +1,13 @@
+.hide{
+	display: none;
+}
+.page-kurorty{
+	.messages{
+		@include m768{
+			display: none;
+		}
+	}
+}
 ul{
 	@include m768{
 		padding-left: 18px;
